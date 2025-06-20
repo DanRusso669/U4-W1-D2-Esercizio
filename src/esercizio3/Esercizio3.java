@@ -8,15 +8,15 @@ public class Esercizio3 {
         separatiDaVirgola();
     }
 
-    public static void separatiDaVirgola (){
+    public static void separatiDaVirgola() {
 
         Scanner scanner = new Scanner(System.in);
 
-        while(true){
+        while (true) {
             System.out.println("Inserisci una stringa. Inserisci ':q' se vuoi uscire. ");
             String str = scanner.nextLine();
 
-            if(!Objects.equals(str, ":q")){
+            if (!Objects.equals(str, ":q")) {
                 System.out.println(String.join(",", str.split("")));
 
             } else {
